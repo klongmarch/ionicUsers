@@ -36,6 +36,10 @@ const routes: Routes = [
     loadChildren: () => import('./user-edit/user-edit.module').then( m => m.UserEditPageModule)
   },
   {
+    path: 'user-delete/:userId',
+    loadChildren: () => import('./user-delete/user-delete.module').then( m => m.UserDeletePageModule)
+  },
+  {
     path: 'user-delete',
     loadChildren: () => import('./user-delete/user-delete.module').then( m => m.UserDeletePageModule)
   }
